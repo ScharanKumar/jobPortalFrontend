@@ -1,0 +1,36 @@
+.headercon{
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.headerli1{
+    list-style-type: none;
+    
+    color: white;
+    height: 40px;
+    width: 100px;
+}
+.headery{
+    color: green;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: arial;
+}
+.xdiv{
+    display: flex;
+    background-color: white;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.headerBut{
+   width: 100px;
+   height: 30px;
+   border-radius: 5px;
+   font-size: 18px;
+   font-family: roboto;
+}

@@ -1,0 +1,14 @@
+.x220{
+    background-color: whitesmoke;
+    margin: 20px;
+    width: 22vw;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+}

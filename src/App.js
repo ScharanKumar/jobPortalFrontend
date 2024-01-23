@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Switch} from "react-router-dom"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Login from "./components/Login"
+import Register from "./components/Register"
+import AdminLogin from "./components/AdminLogin"
+import AdminRegister from "./components/AdminRegister"
+import AdminJobs from "./components/AdminJobs"
+import Home from "./components/Home"
+import Jobs from "./components/Jobs"
+import Jobsapplied from "./components/Jobsapplied"
+import BlogItemDetails from "./components/BlogItemDetails"
+import BlogItemDetailsapplied from "./components/BlogItemDetailsapplied"
+import CompaniesApplied from "./components/CompaniesApplied"
+// import Todolist from "./components/Todolist"
+import ProtectedRoute from "./components/ProtectedRoute"
+import ProtectedRoute1 from "./components/ProtectedRoute1"
+
+const App=()=>{
+    return(
+      // <BrowserRouter>
+         <Switch>
+             <Route exact path="/login" component={Login}/>
+              <Route exact path="/register" component={Register}/>
+              <Route exact path="/admin/login" component={AdminLogin}/>
+              <Route exact path="/admin/register" component={AdminRegister}/>
+              <Route path="/jobdes/:id" component={BlogItemDetails} />
+              <Route path="/jobdesapplied/:id" component={BlogItemDetailsapplied} />
+              <ProtectedRoute1 exact path="/admin/jobs" component={AdminJobs}/>
+              <ProtectedRoute exact path="/" component={Home}/>
+              <ProtectedRoute exact path="/applied" component={Jobsapplied}/>
+              <ProtectedRoute exact path="/notapplied" component={Jobs}/>
+             <ProtectedRoute exact path="/jobs" component={Jobs}/>
+              <ProtectedRoute1 exact path="/companies/applied" component={CompaniesApplied}/>
+              {/* <ProtectedRoute exact path="/todolist" component={Todolist}/> */}
+         </Switch>
+      // </BrowserRouter>
+    )
 }
 
-export default App;
+export default App

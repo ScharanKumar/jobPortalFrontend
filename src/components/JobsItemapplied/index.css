@@ -1,0 +1,27 @@
+.x223{
+    background-color: whitesmoke;
+    border-radius: 7px;
+    margin: 10px;
+    width: 25vw;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+}
+.but{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.jobsP{
+    text-decoration: none;
+    font-size: 18px;
+    color: green;
+    font-family: roboto;
+}
+.item{
+    text-decoration: none;
+}

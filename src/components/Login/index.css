@@ -1,0 +1,58 @@
+.container1{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background-color: aquamarine;
+}
+.img1{
+    width: 40vw;
+    background-size: cover;
+}
+.box1{
+    background-color: white;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 650px;
+    width: 400px;
+    margin-right: 150px;
+}
+.x1{
+    width:80%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.inputl{
+    margin-top: 10px;
+    height: 25px;
+    width: 100%;
+}
+.but1{
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-right: 15px;
+}
+.but2{
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
