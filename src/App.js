@@ -31,7 +31,7 @@ const App=()=>{
               <ProtectedRoute exact path="/notapplied" component={Jobs}/>
              <ProtectedRoute exact path="/jobs" component={Jobs}/>
               <ProtectedRoute1 exact path="/companies/applied" component={CompaniesApplied}/>
-              {/* <ProtectedRoute exact path="/todolist" component={Todolist}/> */}
+            
          </Switch>
       // </BrowserRouter>
     )
