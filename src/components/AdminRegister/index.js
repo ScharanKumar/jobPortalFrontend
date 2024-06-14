@@ -39,7 +39,7 @@ class AdminRegister extends Component{
         return(
            <div className='container11'>
             <div>
-            <img src='https://www.vigrotechnology.com/wp-content/uploads/2020/12/register.png' alt='imm' className='img2' />
+            <img src='https://img.freepik.com/premium-vector/register-now-badge-vector-isolated-white-vector-button-registration-services-blogs-websites_735449-447.jpg' alt='imm' className='img2' />
             </div>
               
               <div className='box11'>

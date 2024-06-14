@@ -1,6 +1,6 @@
 import {Component} from 'react'
 import JobsItemapplied from '../JobsItemapplied'
-import Headerjobs from "../Headerjobs"
+import {Link} from 'react-router-dom'
 // import Apply from "../Apply"
 // import {v4 as uuidv4} from 'uuid'
 import Cookies from 'js-cookie'
@@ -58,7 +58,28 @@ class Jobs extends Component{
         const {there1,list1}=this.state
         return(
             <div className='container15'>
-              <Headerjobs/>
+              
+              <div className='xdiv'>
+            <ul className='headercon'>
+
+            <li className='headerli1'>
+                    <Link className="headery" to="/">GoToHomePage</Link>
+                </li>
+                <li className='headerli1'>
+                    <Link className="headery" to="/notapplied">Oppurtunities</Link>
+                </li>
+                <li className='headerli1'>
+                    <Link className="headerz" to="/applied">Applications</Link>
+                </li>
+                
+            
+                {/* <button type='button' className='headerBut' onClick={x}>Log Out</button> */}
+
+            </ul>
+
+
+        </div>
+
               <h1 className='head15'>Applied Jobs</h1>
 
               {there1 && (
